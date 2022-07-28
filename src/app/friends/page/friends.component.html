@@ -1,0 +1,13 @@
+<app-chart *ngIf="data$ | async as data" [data]="data"></app-chart>
+
+<div>
+    <form class="friends-form">
+        <mat-form-field>
+            <mat-label>Name</mat-label>
+            <input matInput value="Name">
+        </mat-form-field>
+        <button mat-raised-button color="primary">
+            Create
+        </button>
+    </form>
+</div>
